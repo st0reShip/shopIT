@@ -2,6 +2,7 @@
   --clr-white: hsl(0, 0%, 100%);
   --clr-black: hsl(2, 2%, 2%);
   --clr-blue-light: hsl(210, 100%, 88%);
+  --clr-gray:424242;
 }
 
 a{
@@ -54,9 +55,12 @@ body {
     padding: 1rem;
     position: fixed;
     bottom: 0;
-    button{
-      background: none;
-      border: none;
+    a:hover, a:active{
+      background: var(--clr-white);
+      svg:hover, svg:active{
+        z-index: 100;
+        fill: var(--clr-black);
+      }
     }
   }
 }
@@ -117,6 +121,9 @@ main {
     margin-bottom: 1rem;
     justify-content: space-between;
     input{
+      border: .1rem solid var(--clr-black);
+      border-radius: .5rem;
+      padding: 1rem 2rem;
       width: 70%;
     }
     button{
@@ -124,10 +131,6 @@ main {
       border: none;
     }
   }
-  .product-card:hover,.product-card:active{
-  background: var(--clr-black);
-  color: var(--clr-white);
-}
 
 .product-card{
   margin-bottom: 1.3rem;

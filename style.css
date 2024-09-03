@@ -2,6 +2,7 @@
   --clr-white: hsl(0, 0%, 100%);
   --clr-black: hsl(2, 2%, 2%);
   --clr-blue-light: hsl(210, 100%, 88%);
+  --clr-gray:424242;
 }
 
 a {
@@ -63,9 +64,12 @@ body .mobile-nav {
   position: fixed;
   bottom: 0;
 }
-body .mobile-nav button {
-  background: none;
-  border: none;
+body .mobile-nav a:hover, body .mobile-nav a:active {
+  background: var(--clr-white);
+}
+body .mobile-nav a:hover svg:hover, body .mobile-nav a:hover svg:active, body .mobile-nav a:active svg:hover, body .mobile-nav a:active svg:active {
+  z-index: 100;
+  fill: var(--clr-black);
 }
 
 main {
@@ -126,15 +130,14 @@ main .search-bar {
   justify-content: space-between;
 }
 main .search-bar input {
+  border: 0.1rem solid var(--clr-black);
+  border-radius: 0.5rem;
+  padding: 1rem 2rem;
   width: 70%;
 }
 main .search-bar button {
   background: none;
   border: none;
-}
-main .product-card:hover, main .product-card:active {
-  background: var(--clr-black);
-  color: var(--clr-white);
 }
 main .product-card {
   margin-bottom: 1.3rem;
