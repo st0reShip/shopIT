@@ -54,22 +54,34 @@ body nav {
   border-bottom-left-radius: 0.8rem;
   border-bottom-right-radius: 0.8rem;
 }
-body .mobile-nav {
+body nav .active {
+  display: none;
+}
+body nav a {
+  text-decoration: none;
+}
+body .nav-btn:hover .main, body .nav-btn:active .main {
+  display: none;
+}
+body .nav-btn:hover .active, body .nav-btn:active .active {
+  display: inline-block;
+  background: var(--clr-white);
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+}
+body .bottom-nav {
   display: flex;
   background: var(--clr-black);
   align-items: center;
   justify-content: space-around;
+  height: 2rem;
   width: 100%;
   padding: 1rem;
   position: fixed;
   bottom: 0;
 }
-body .mobile-nav a:hover, body .mobile-nav a:active {
-  background: var(--clr-white);
-}
-body .mobile-nav a:hover svg:hover, body .mobile-nav a:hover svg:active, body .mobile-nav a:active svg:hover, body .mobile-nav a:active svg:active {
-  z-index: 100;
-  fill: var(--clr-black);
+body .bottom-nav a {
+  text-decoration: none;
 }
 
 main {
@@ -126,8 +138,9 @@ main .dark .input button {
 }
 main .search-bar {
   display: flex;
-  margin-bottom: 1rem;
+  margin: 1rem auto;
   justify-content: space-between;
+  max-width: 40rem;
 }
 main .search-bar input {
   border: 0.1rem solid var(--clr-black);
@@ -139,7 +152,12 @@ main .search-bar button {
   background: none;
   border: none;
 }
+main .products {
+  display: flex;
+  flex-wrap: wrap;
+}
 main .product-card {
+  margin-inline: auto;
   margin-bottom: 1.3rem;
   border: solid 0.1rem var(--clr-black);
   border-radius: 0.5rem;
@@ -147,6 +165,7 @@ main .product-card {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
+  max-width: 25rem;
 }
 main .product-card .product {
   display: flex;

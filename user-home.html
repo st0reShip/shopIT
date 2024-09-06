@@ -8,28 +8,32 @@
 </head>
 <body>
     <nav>
-        <h2 class="white-txt">Store Name</h2>
+        <h2 class="white-txt">Store</h2>
         <div class="right">
-            <a class="nav-btn profile-btn" href=""> 
+            <a class="nav-btn cart-btn" href="./cart.html"> 
+                <img class="main" src="images/cart-white.svg" alt="">
+                <img class="active" src="images/cart-black.svg" alt="">
+            </a>
+            <a class="nav-btn profile-btn" href="./user-profile"> 
                 <img class="main" src="images/profile.svg" alt="">
                 <img class="active" src="images/profile-black.svg" alt="">
             </a>
         </div>
     </nav>
     <div class="bottom-nav">
-        <a class="nav-btn href=""> 
+        <a class="nav-btn" href="./orders.html"> 
             <img class="main" src="images/orders.svg" alt="">
             <img class="active" src="images/orders-black.svg" alt="">
         </a>
-        <a class="nav-btn" href=""> 
+        <a class="nav-btn" href="./featured.html"> 
             <img class="main" src="images/featured.svg" alt="">
             <img class="active" src="images/featured-black.svg" alt="">
         </a>
-        <a class="nav-btn" href=""> 
+        <a class="nav-btn" href="./search.html"> 
             <img class="main" src="images/search-white.svg" alt="">
             <img class="active" src="images/search.svg" alt="">
         </a>
-        <a class="nav-btn" href=""> 
+        <a class="nav-btn" href="./store.html"> 
             <img class="main" src="images/store.svg" alt="">
             <img class="active" src="images/store-black.svg" alt="">
         </a>
@@ -37,11 +41,38 @@
     <main>
 
         <div class="search-bar">
-            <input type="text" aria-label="Search" placeholder="Search details...">
-            <button><img src="/images/search.svg" alt=""></button>
+            <input type="text" aria-label="Search" required placeholder="Search details...">
+            <button type="submit"><img src="/images/search.svg" alt=""></button>
             <button><img src="/images/filter.svg" alt=""></button>
         </div>
         <div class="products">
+            <div class="product-card">            
+                <div class="product">
+                    <img class="product-img" src="images/Rectangle 6.png" alt="">
+                    <div class="product-txt">
+                        <h3>Product Name</h3>
+                        <p>KSH 2000</p>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button><img src="images/cart-black.svg" alt=""></button>
+                    <button><img src="images/like-outlined.svg" alt=""></button>
+                </div>
+            </div>
+
+            <div class="product-card">            
+                <div class="product">
+                    <img class="product-img" src="images/Rectangle 6.png" alt="">
+                    <div class="product-txt">
+                        <h3>Product Name</h3>
+                        <p>KSH 2000</p>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button><img src="images/cart-black.svg" alt=""></button>
+                    <button><img src="images/like-outlined.svg" alt=""></button>
+                </div>
+            </div>
             <div class="product-card">            
                 <div class="product">
                     <img class="product-img" src="images/Rectangle 6.png" alt="">
