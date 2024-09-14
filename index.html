@@ -3,39 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>shopIT</title>
     <link rel="stylesheet" href="style.css" />
+    <title>shopIT</title>
   </head>
   <body>
     <nav>
-      <a href=""><h2 class="white-txt">shopIT</h2></a>
-      <div class="right">
-          <a class="nav-btn profile-btn" href=""> 
-              <img class="main" src="images/profile.svg" alt="">
-              <img class="active" src="images/profile-black.svg" alt="">
-          </a>
+      <h2 class="white-txt">Store</h2>
+      <div class="inline-flex right">
+        <a href="#">Home</a>
+        <a href="./blog.html">Blog</a>
+        <a href="#features">Features</a>
       </div>
-  </nav>
-    <main>
-      <center>
-        <h1 class="txt-xl">Get Early Access to Our Amazing Product <br>🌟</h1>
-        <p class="tagline">
-          Broaden your reach with our groundbreaking product. <a href="./home.html"> Learn more...</a>
-        </p>
-      </center>
+    </nav>
 
-      <div class="dark">
-        <h2 class="txt-lg">Get Ready to Launch Faster</h2>
-        <p class="txt-md">
-          Unlock early access to the quickest way to launch your e-commerce
-          site. Ship your store online in record time no coding required.
-        </p>
-        <form class="input">
-          <input type="email" placeholder="Enter your email" />
-          <button class="txt-md" type="submit">Get Early Access</button>
-        </form>
-        <p class="txt-sm">No credit card details required</p>
+    <main>
+      <div class="hero">
+        <h1 class="txt-xl">Start selling in minutes. No-code. No hassle.</h1>
+        <p class="tagline gray-txt">Your custom store. Your domain. Ready to launch</p>
+        <a href="">Learn more</a>
       </div>
+      <div id="features" class="features">
+        <h1>Features</h1>
+        <div class="flex">
+          <div class="flex-item feature">
+            <div class="inline-flex">
+              <img src="./images/landing/ri_tools-fill.svg" alt="" height="25">
+              <h3>Effortless Setup</h3>
+            </div>
+            <p class="gray-txt">With just your domain and a subscription your custom store is ready to go. Zero coding required.</p>
+          </div>
+
+          <div class="flex-item feature">
+            <div class="inline-flex">
+              <img src="./images/landing/iconoir_design-pencil.svg" alt="" height="25">
+              <h3>Beautiful by Design</h3>
+            </div>
+            <p class="gray-txt">Stunning, responsive templates that automatically adapt to your barnd and make your products shine</p>
+          </div>
+</div>
+          <div class="flex">
+          <div class="flex-item feature">
+            <div class="inline-flex">
+              <img src="./images/landing/economic-growth.svg" alt="" height="25">
+              <h3>Tailored for Growth</h3>
+            </div>
+            <p class="gray-txt">Scalable features built-in to help you sell more anywhere, anytime</p>
+          </div>
+
+          <div class="flex-item feature">
+            <div class="inline-flex">
+              <img src="./images/landing/secure.svg" alt="" height="25">
+              <h3>Secure and Fast</h3>
+            </div>
+            <p class="gray-txt">Industry-leading performance and security keep your store running smoothly, 24/7.</p>
+          </div>
+        </div>
+      </div>
+
+      <article class="newsletter">
+        <h2>Ready to Get Started?</h2>
+        <p>
+          Your store is just a few clicks away. Choose your domain, pick your
+          plan and start selling today.
+        </p>
+
+        <form class="black-bg">
+          <h2>Be the First to Experience the Future of E-commerce</h2>
+          <p>
+            Sign up for exclusive early access and enjoy discounted rates, personalized onboarding and priority support. Get ahead of the competition.
+          </p>
+          <div class="inline-flex">
+            <input placeholder="Enter email here" type="email" required>
+            <button type="submit">Join the Waitlist</button>
+          </div>
+        </form>
+      </article>
     </main>
   </body>
 </html>
