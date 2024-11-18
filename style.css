@@ -15,6 +15,13 @@ a {
 .white-txt {
   color: var(--clr-white);
 }
+.white-txt .white {
+  background-color: var(--clr-white);
+  height: 1rem;
+  width: 1rem;
+  color: var(--clr-black);
+  padding: 0.2rem;
+}
 
 .txt-xl {
   font-size: 3.5rem;
@@ -52,8 +59,25 @@ a {
 
 body {
   margin: 0;
-  font-family: "Inter";
+  font-family: "Inter", sans-serif;
   scroll-behavior: smooth;
+}
+body .landing-nav {
+  background-color: var(--clr-black);
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+body .landing-nav .logo {
+  max-width: 300px;
+  margin: auto 0;
+}
+body .landing-nav a {
+  color: var(--clr-white);
+  text-decoration: none;
+}
+body .landing-nav a:hover {
+  text-decoration: underline;
 }
 body nav {
   background: var(--clr-black);
@@ -103,44 +127,23 @@ main {
   height: 100dvh;
   padding: 1.2rem;
 }
-main form.black-bg {
-  border-radius: 0.5rem;
+main .pricing {
+  padding: 1rem;
+  border-radius: 1rem;
   background: var(--clr-black);
   color: var(--clr-white);
-  padding: 1rem 2rem;
-  margin: 1rem auto;
   max-width: 600px;
+  margin-bottom: 1.5rem;
 }
-main form.black-bg .inline-flex {
-  flex-direction: column;
-  align-items: flex-start;
-}
-main form.black-bg .inline-flex input {
-  background: none;
-  border: solid 0.2rem var(--clr-white);
-  border-radius: 0.4rem;
-  padding: 0.4rem 0.8rem;
-  width: 200px;
-  color: var(--clr-white);
-}
-main form.black-bg .inline-flex input::-moz-placeholder {
-  color: var(--clr-white);
-}
-main form.black-bg .inline-flex input::placeholder {
-  color: var(--clr-white);
-}
-main form.black-bg .inline-flex button {
-  border-radius: 1rem;
-  padding: 0.6rem 1rem;
+main .pricing button {
+  width: 100%;
+  padding: 0.5rem;
   border: none;
   background: var(--clr-white);
+  border-radius: 0.5rem;
 }
 main h1 {
   max-width: 18ch;
-}
-main .tagline {
-  max-width: 25ch;
-  font-size: 2rem;
 }
 main a {
   color: var(--clr-black);
